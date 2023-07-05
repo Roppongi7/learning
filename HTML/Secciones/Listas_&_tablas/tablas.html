@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+            font-family: sans-serif;
+        }
+        .colspan{
+            background-color: steelblue;
+        }
+
+        .biologia{
+            background-color: #3fd868;
+        }
+
+        .matematica-b{
+            background-color: #dd5a5a;
+        }
+
+        .contabilidad{
+            background: #15bdd6;
+        }
+
+        .planilla{
+            background-color: #aaa;
+        }
+
+        .APT{
+            background-color: #7fffd4;
+        }
+
+        .economia{
+            background-color: #08f548;
+        }
+
+        .matematica{
+            background-color: #ffdbe7;
+        }
+
+        .sociologia{
+            background-color: #f37bd7;
+        }
+        col{
+            background-color: #d7f7fd;
+        }
+    </style>
+</head>
+<body>
+
+<h1>tabla</h1>
+
+<table>
+        <colgroup>
+            <col span="1">
+            <!-- utilizando span y un numero, seleccionamos cuantos col va a utilizar, en esta caso, utiliza 3 columnas. -->
+        </colgroup>
+        <!-- Esto selecciona la primer columna, dentro de CSS utilizamos col background color red para demostrarlo. -->
+    <caption>HORARIO DE CLASES.</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <!-- Si utilizamos un <thead>, debemos utilizar un <tbody> -->
+    <tbody>
+        <tr>
+            <td>07:15 - 8:00</td>
+            <td>Libre.</td>
+            <td rowspan="3" class="matematica">Matematica A</td>
+            <!-- hacemos que matematica ocupe los 3 espacios correspondientes, eliminando los otros dos de abajo, correspondiente a las otras horas. Comentados en vez de borrados, como guia. -->
+            <td rowspan="3" class="sociologia">Sociologia</td>
+            <td>Libre.</td>
+            <td rowspan="3" class="APT">APT Comunicaciones</td>
+        </tr>
+        <tr>
+            <td>8:00 - 8:45</td>
+            <td rowspan="2" class="biologia">Biologia</td>
+            <!-- <td>Matematica A</td> -->
+            <!-- <td>Sociologia</td> -->
+            <td>Libre.</td>
+            <!-- <td>APT Comunicaciones</td> -->
+        </tr>
+        <tr>
+            <td>8:45 - 9:30</td>
+            <!-- <td>Biologia</td> -->
+            <!-- <td>Matematica A</td> -->
+            <!-- <td>Sociologia</td> -->
+            <td>Libre.</td>
+            <!-- <td>APT Comunicaciones</td> -->
+        </tr>
+        <tr>
+            <td>9:30 - 10:15</td>
+            <td class="matematica-b">Matematica B</td>
+            <td>Libre.</td>
+            <td class="planilla">Planilla Electronica</td>
+            <td class="matematica-b">Matematica B</td>
+            <td class="contabilidad">Contabilidad Superior</td>
+        </tr>
+        <tr>
+            <td>10:15 - 10:25</td>
+            <td colspan="5" class="colspan">Recreo</td>
+            <!-- ahora td recreo ocupa 5 columnas. -->
+        </tr>
+        <tr>
+            <td>10:25 - 11:10</td>
+            <td class="matematica-b">Matematica B</td>
+            <td>Libre.</td>
+            <td class="planilla">Planilla Electronica</td>
+            <td class="matematica-b">Matematica B</td>
+            <td class="contabilidad">Contabilidad Superior</td>
+        </tr>
+        <tr>
+            <td>11:10 - 11:50</td>
+            <td rowspan="2" class="contabilidad">Contabilidad Superior</td>
+            <td>Libre.</td>
+            <td rowspan="2" class="contabilidad">Contabilidad Superior</td>
+            <td class="matematica">Matematica A</td>
+            <td rowspan="3" class="economia">Economia</td>
+        </tr>
+        <tr>
+            <td>11:55 - 12:40</td>
+            <!-- <td>Contabilidad Superior</td> -->
+            <td>Libre.</td>
+            <!-- <td>Contabilidad Superior</td> -->
+            <td>Libre.</td>
+            <!-- <td>Economia</td> -->
+        </tr>
+        <tr>
+            <td>12:40 - 13:25</td>
+            <td>Libre.</td>
+            <td>Libre.</td>
+            <td>Libre.</td>
+            <td>Libre.</td>
+            <!-- <td>Economia</td> -->
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total de Asignaturas</td>
+            <td colspan="5" class="colspan">8</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!--
+    Las tablas en HTML sirven para mostrar contenido tabulado.
+
+    La estructura basica de una tabla se compone de:
+
+    table -> Etiqueta que encierra una tabla.
+    tr -> table row, etiqueta que construye una fila.
+    td -> table data, etiqueta que construye una celda.
+
+    truco: el numero de celdas dentro de un td, establecera el numero de columnas de la tabla.
+-->
+
+<!--
+    Los titulos de las tablas se establecen con la etiqueta <caption>, es una etiqueta opcional, y segun la especificacion, esa etiqueta se coloca justo despues de la etiqueta table.
+
+    Las cabeceras de las tablas se establecen con la etiqueta <thead>.
+    Dentro tendremos una etiqueta <tr> normal, pero en el caso de las celdas, las estableceremos con la etiqueta <th> en lugar de <td>.
+
+    El contenido de la tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla.
+
+    De forma opcional podemos colocar un <tfoot> a la tabla para establecer un pie de tabla, esto es algo que algunas tablas tienen como suma de cantidades o totales.
+-->
+
+<!--
+    Para hacer que las celdas ocupen mas de una fila o mas de una columna tenemos 2 atributos:
+
+    rowspan: Sirve para que una celda ocupe mas de una fila, el valor por defecto es 1
+
+    colspan: Sirve para que una celda ocupe mas de una columna, el valor por defecto es 1.
+-->
+
+<!--
+    Cuando necesitamos seleccionar una columna, tenemos la etiqueta <colgroup>, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas tengamos, cada etiqueta col equivaldra a una columna siguiendo el mismo orden que tienen en la tabla.
+
+    Si necesitamos que una etiqueta col agrupe mas de una columna, tenemos eltatributo span, que funciona exactamente igual que rowspan y colspan.
+-->
+</body>
+</html>

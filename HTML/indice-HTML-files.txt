@@ -1,0 +1,25 @@
+indice ubicacion de temas dentro de archivos HTML, CSS, JS.
+
+Estudios/HTML:
+	
+	- Todas las etiquetas HTML comentadas segun su significado. 
+
+
+Estudios/HTML/Secciones/encabezados/headings-and-paragraphs:
+	
+	- H1~H6.
+	- Anidamiento.
+
+Estudios/HTML/Secciones/contenido/Content-section:
+	
+	- Header.
+	- Main.
+	- Footer.
+
+Estudios/HTML/Secciones/contenido/section-article:
+
+	- Section.
+	- Article.
+	- Aside.
+	- Anidamiento section-article.
+

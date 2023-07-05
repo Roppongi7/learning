@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Es todo aquel contenido que trames desde fuera.
+        Estos archivos son los que mas peso (tamano) anaden a un sitio web
+            los tipos mas conocidos son:
+                -Imagenes
+                -audio
+                -video
+                -iframes
+        ////Imagenes////
+
+            Los formatos de imagenes para web los podemos clasificar en 2 tipos
+                vectoriales.
+                    svg(recomendado siempre que se pueda.)
+                mapa de bits
+                    -jpg
+                    -png 8 y 24
+                    -gif
+                    -webp (el formato que menos pesa)
+    -->
+
+<!-- MAPA DE BITS VS VECTORIALES. vectormagic.com (para el futuro)-->
+
+<!-- Mapa de bits es absoluto, al hacer zoom, se mantiene el ratio de pixeles al punto de pixelar la imagen una vez avanzado el zoom.
+
+Vectoriales reescala la imagen a una resolucion o nivel de renderizado mas acorde  al zoom que hagamos, es como si zoom cambiara la resolucion de la imagen a su vez de acercandose, mejorando muchisimo la calidad de imagen.
+
+vectoriales se utilizan sobretodo en logos, imagenes de redes sociales, iconos, etc.
+
+vectoriales, al ser calculos, ocupa mucho menos espacio, logrando que la pagina web se cargue en el menor tiempo posible. mejorar en programacion, es cubrir este tipo de detalles, el mejor camino para lograr menor tiempo de cargado de pagina.
+-->
+
+<!-- WEBP -->
+
+<!-- online-convert.com convierte imagenes en distintos formatos.
+
+    webp pesa muchisimo menos que los png. 14kb png, 46kb webp
+    si no usamos vectoriales, utilizamos webp.
+-->
+
+<!-- Como poner imagenes en HTML -->
+
+    <h1>Contenido embebido</h1>
+
+    <img src="/HTML/assets/images/webP.webp" alt="descripciondeimagen">
+    <!-- es importante utilizar el alt, nos describe en caso de que no cargue la imagen, o para contenido de audio para ciegos. -->
+    <img src="/HTML/assets/images/WebP_Logo.png" alt="imagenPNG">
+    <img src="/HTML/assets/images/gato.jpg" alt="imgaenJPG">
+
+    <!-- Flaticon.es pagina con un monton de iconos vectoriales para utilizar en las websites. -->
+
+    <img src="/HTML/assets/images/dharmwg275824.svg" alt="coso azul feo de ejemplo SVG.">
+
+    <!-- las imagenes svg tienen su propio codigo dentro del archivo, copiandolo aqui, no necesitamos la etiqueta img, esto sirve en caso de querer interactuar con la imagen desde CSS o desde javascript. -->
+</body>
+</html>

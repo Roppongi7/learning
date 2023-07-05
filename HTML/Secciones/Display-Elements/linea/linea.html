@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Elementos de linea</h1>
+    <!--em -> emphasis
+        strong -> mas emphasis
+        small -> menos enfasis que el texto normal
+        br -> forzar un salto de linea
+        wbr -> Salto de linea si hiciera falta
+        time -> se usa para representar un contenido de hora/fecha
+        i -> italic
+        b -> bold
+        u -> underline
+        <sub> -> subindice 2abajo
+        <sup> -> superindice 2 a la 4-->
+        <!-- no se utiliza para generar estilos, se utiliza para marcar importancia y entendimiento a nivel de codigo del documento HTML.-->
+
+        <!--
+            span -> Es un contenedor de linea, equivalente a un div, se suele usar para encerrar palabras o pequenos textos y darles estilo a traves de CSS o localizarlos desde JS. Semanticamente no significa nada.
+
+            q -> Es el equivalente a blockquote, significa quote, por eso el de bloque se llama block - quote. Sirve para poner citas pero en linea.
+
+            code -> Sirve para encerrar codigo que queremos representar visualmente, suele ir unido con la etiqueta pre.
+        -->
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dicta laudantium soluta <span> corporis tempore non ipsum provident</span> quaerat quasi. Quasi dolor magni nisi, aspernatur totam sequi aliquam id omnis tempora?
+        </p>
+    </div>
+    <q>citas pero como elemento en linea</q>
+    <pre>
+        <code>
+            span {
+                background-color: black;
+            }
+        </code>
+    </pre>
+    <p>La etiqueta <code>&lt;h1&#62;</code> se utiliza para representar titulos de primer nivel.</p>
+    <!-- aqui se esta utilizando codigo ASCII para escribir tal cual linea de codigo <h1> sin que HTML lo active. dentro del diccionario de ASCII nos dice cada codigo de HTML. -->
+    <!-- simbolo de copyright &copy -->
+    &copy;
+</body>
+</html>

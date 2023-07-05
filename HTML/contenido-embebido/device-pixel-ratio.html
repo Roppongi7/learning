@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- DPR (Device Pixel Ratio)
+    Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido.
+
+    DPR = PIXELES REALES / PIXELES DISPONIBLES.
+    whatismyviewport.com // pagina web para ver el viewport de mi pantalla y asi tomar medidas.
+
+    viewport -> Espacio que tenemos disponible para dibujar. mi pc es 1920x1080 en resolucion real.
+    de pintado, tengo 1920px x 969px. un ratio de 1.00001. esos 111px que faltan de altura, es la barra de pestanas, que ocupa espacio de la pantalla. el viewport es la diferencia entre la pagina web, y el total de la pantalla segun la resolucion.
+
+    en un movil. el DPR es 2.4, 2.6, a veces 3. al ser resoluciones mas pequenas.
+
+    la idea de utilizar DPR, es para reescalar las imagenes a menor peso, porque es innecesario que en un desarrollo mobile, tengamos una imagen de 1920x969, porque pesa mucho, para el funcionamiento que lleva en mobile. con 300px se veria de la misma calidad. ocuparia espacio innecesariamente.
+
+    la manera de solucionar esto, es colocar una imagen de 1000px para desktop, y una de 200 px para mobile. las medidas son a modo de ejemplo.
+-->
+
+    <!-- <img src="/HTML/assets/images/dharmwg275824.svg" alt=""> -->
+
+    <!-- <img srcset="/HTML/assets/images/gato.jpg,
+                /HTML/assets/images/webP_Logo.png 3x" alt=""> -->
+<!-- aqui ponemos las 2 imagenes dentro de una misma etiqueta img. como funciona, en una situacion normal, carga la primer imagen, pero si el dispositivo tiene DPR, carga la imagen que tiene escrito el texto 3x. 3x significa DPR x 3. -->
+
+<!-- etiqueta picture -->
+    <picture>
+        <source srcset="/HTML/assets/images/gato.jpg,
+        /HTML/assets/images/webP_Logo.png 3x" media="(max-width:1200px)">
+        <img src="/HTML/assets/images/gato.jpg" alt="tuvieja">
+    </picture>
+    <!-- es un reemplazo a usar img. etiqueta picture. -->
+</body>
+</html>

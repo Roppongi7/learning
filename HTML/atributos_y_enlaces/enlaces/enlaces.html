@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<a href="https://google.com" target="_blank">soy un enlace</a>
+
+<!--
+    - a es la etiqueta utilizada para utilizar un link, a = anchor.
+
+    - en el atributo HREF especificamos hacia donde se dirige el enlace
+
+    - Dentro de la etiqueta escribimos lo que queremos que el enlace diga -->
+
+
+    <!-- Enlaces: Conocidos tambien por links popularmente. Su objetivo es conectar una pagina web con otra, con un recurso tanto interno como externo, o con otro sitio web.
+
+    Tienen el atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que solicitamos.
+
+    Tambien tiene el atributo target, que configura como queremos visualiazar el recurso o sitio que solicitamos.
+-->
+
+<!--
+    Rutas absolutas:
+        Tienen un protocolo, http o https y son unicas en la red. Se suelen utilizar para rutas externas
+
+    Rutas relativas:
+        Pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto.
+
+        No usan protocolo
+
+        Si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+
+        Si necesitamos salir de la carpeta actual, usaremos ../ y se pone uno por cada nivel (carpeta) de la que queramos salir.
+
+        ej: para llegar a HTML.
+            ../../HTML
+
+        Si solo anadimos una barra / le decimos al link que vaya al punto mas alto de la raiz, al index.html
+-->
+<!--
+    Atributos de los enlaces
+        Target: Define donde se abrira el recurso solicitado. Por norma general siempre que usemos rutas absolutas, pondremos como valor "_blank".
+        El valor por defecto es "_self".
+
+        download: Atributo booleano, sirve para descargar el recurso solicitado.
+        IMPORTANTE, el recurso debe estar en tu mismo servidor.
+        Por lo general se crea una carpeta llamada assets, para guardar todas las imagenes de la pagina.
+-->
+</body>
+</html>

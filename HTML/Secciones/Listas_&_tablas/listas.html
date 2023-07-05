@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Listas</h1>
+    <!-- Lista desordenada -->
+    <h2>Lista desordenada</h2>
+        <ul>
+            <li>pan</li>
+            <li>arroz</li>
+            <li>fideos</li>
+            <li>lentejas</li>
+        </ul>
+    <h2>lista ordenada</h2>
+        <ol>
+            <li>messi</li>
+            <li>cristiano</li>
+            <li>haaland</li>
+            <li>Mbappe</li>
+            <li>el chicho serna</li>
+        </ol>
+<!-- nota: la etiqueta <li> se utiliza para marcar los elementos de la lista dentro de la etiqueta <ul>, uno especifica el list item, el otro especifica el tipo de lista. dentro de la etiqueta <ol>, tambien utilizamos la etiqueta <li>. -->
+
+
+    <!-- Ejemplo de uso de lista, con un menu navegador. -->
+    <nav>
+        <ul type="square">
+            <li><a href="#direccion-de-la-pagina">ubicacion</a></li>
+            <li><a href="#direccion-de-la-pagina">ubicacion</a></li>
+            <li><a href="#direccion-de-la-pagina">ubicacion</a></li>
+            <li><a href="#direccion-de-la-pagina">ubicacion</a></li>
+        </ul>
+    </nav>
+    <!-- fin del ejemplo de uso de lista.  -->
+
+<!-- Las listas en HTML sirven para listar contenido. En funcion del tipo de contenido de nuestra lista tenemos tres tipos de listas:
+
+    ul -> unordered list: Se utilizan cuando el orden de los elementos no influye (ej: lista de compras)
+
+    ol -> ordered list: Se utilizan cuando el orden de los elementos es importante (ej: top 10)
+
+    dl -> definition list: Se utilizan para hacer una lista de definiciones       (ej: diccionario) no se utilizan practicamente nunca.
+
+    Es de muy buena practica utilizar una u otra en determinado momento, brindando la semantica correcta de entendimiento a HTML, asi tengan el mismo aspecto, el concepto que toma HTML de cada lista, es unico de esa lista.
+-->
+
+<!--
+    Se pueden construir listas anidadas teniendo en uno de los <li> otro ul/ol segun sea necesario.
+    Ej:
+-->
+    <ol>
+        <li>
+            HTML
+            <ol>
+                <li>Estructura</li>
+                <li>Sintaxis</li>
+                <li>Etiquetas</li>
+            </ol>
+        </li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+<!--
+    Atributos de las listas
+
+    ol ->
+        type: Estilo de numeracion (1, A, a, I, i).
+        start: Inicio de las secuencias (un numero).
+    ul -> type: Estilo de los items (disc, square, circle) (recomendado CSS).
+-->
+</body>
+</html>

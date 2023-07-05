@@ -1,0 +1,130 @@
+/*
+* Selector -> El elemento al que vamos a aplicar estilos
+* Propiedad -> Lo que vamos a cambiar
+* Valor -> El nuevo valor que va a tener
+*Propiedad:valor -> Se le denomina declaracion al conjunto de selector+declaracion(es) se le denomina regla.
+ */
+
+/*
+selector {
+    propiedad: valor;
+    propiedad2: valor;
+    propiedadn: valor;
+}
+*/
+
+/* /////////////////////////////////////// */
+
+/* SELECTORES */
+
+/*
+    Selectores Simples
+        Selectores Elementales
+            Selector universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta. se usan el casos   concretos.
+        Selectores de atributo
+
+            - ID -> id del elemento
+            - clase -> clase del elemento
+            - otros atributos.
+
+    Selectores Compuestos
+        Selectores agrupados
+        Selectores combinadores
+        Pseudoclases - Pseudoelementos
+*/
+
+*{
+    background-color: lightcoral;
+}
+
+h1{
+    background-color: black;
+}
+
+/* /////////////////////////////////////// */
+
+/* ID & Clases */
+
+/* selector id. key sensitive. no se recomienda dar estilos con identificadores. */
+#soyunID{
+    background-color: black;
+}
+
+/* selector clase. key sensitive */
+.soyunaClase{
+    background-color: black;
+}
+
+/* /////////////////////////////////////// */
+
+/* Selectores de atributos */
+
+[href]{
+    background-color: black;
+}
+
+[href="valor"]{
+    background-color: black;
+}
+
+[href^="arroz"]{
+    /* comprueba si el atributo empieza por ese valor */
+    background-color: black;
+}
+
+[href*="arroz"]{
+    /* comprueba si esta palabra pertenece a alguna parte del link */
+    background-color: black;
+}
+
+[href$="arroz"]{
+    /* comprueba si termina con este valor, y le da las propiedades */
+    background-color: black;
+}
+
+[lang|="en"]{
+    /* comprueba si el texto tiene declarado el idioma y lo modifica */
+    background-color: black;
+}
+
+/* /////////////////////////////////////// */
+
+/* Selectores agrupados */
+
+.text,
+.text1,
+.text2,
+.text3{
+    background-color: black;
+}
+/* podemos separar los selectores por comas, y da la misma propiedad a todos los elementos. a elementos repetidos, darle la misma propiedad, ahorra codigo y practicidad. */
+
+/* /////////////////////////////////////// */
+
+/* Selectores combinadores */
+
+/* Selectore descendiente */
+
+div .title-2{
+    background-color: black;
+}
+/* Le da estilo a todos los .title-2 clase, dentro de los div padre. solo items con esta clase dentro de ese terminado contenedor. lo mas recomendable es no usarlo o usar pocos elementos. Si buscamos .title-2 fuera de un div, no dara estilos. */
+
+/* Selector de hermano siguiente: son dos elementos dentro de un mismo contenedor, ambos hermanos hijos del mismo padre, seria algo asi. */
+
+.text-2 + .title-2{
+    background-color: black;
+}
+/* con el mas, se suman ambas clases siendo hermanos. */
+
+.text-2 ~ p{
+    background-color: black;
+}
+/* Esto selecciona todos los hermanos siguientes que sean p, no importa si posee otros hermanos entre medio. */
+
+.container > p{
+    background-color: black;
+}
+
+/* Selecciona todos los P que sean hijos directos de container */

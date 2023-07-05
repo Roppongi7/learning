@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Los elementos de bloque van a ocupar todo el ancho disponible, aunque su contenido no lo haga, por lo que los elementos que pongamos a continuacion saltaran a la siguiente linea. -->
+    <h1>Soy un elemento de bloque</h1>
+    <p>Soy otro elemento de bloque</p>
+
+    <address>
+        Tony Stark <br>
+        Malibu 10880 <br>
+        90265 <br>
+        California <br>
+        <!-- es buena practica aca br, porque es semantica correcta de direcciones. -->
+    </address>
+
+    <blockquote cite"https://Linkdedondeprovienelacita">
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque in, ducimus eaque nemo, laboriosam temporibus fuga labore earum expedita ex non. Perspiciatis natus nobis aperiam minus minima perferendis, temporibus voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil veritatis quos dolore vero quia distinctio, cum beatae pariatur explicabo sed ex, ducimus sit. Esse et sequi non consequatur aperiam."
+    </blockquote>
+
+    <pre>
+        Aqui escribimos el codigo que queremos que se escriba tal cual en la pagina.
+        <div><p>soy un div</p></div>
+    </pre>
+
+    <div>
+        <h2>Nombre</h2>
+        <p>descripcion</p>
+        <!-- Encierra el contenido en una caja, para luego poder ser editado en CSS-->
+    </div>
+
+    <hr>
+    <!-- hr informa al navegador que vamos a hacer un cambio de tema, no es para dibujar una linea, es para cambiar de tema. -->
+    <!--
+        Address -> Se utiliza para aportar informacion de contacto para el article mas cercano o para todo el body
+
+        blockquote -> Se utiliza para marcar las citas a otros autores o documentos. Se puede incluir el atributo cite para poner un enlace al documento original o fuente.
+
+        pre -> Se utiliza para tener codigo preformateado que necesita ser representado igual que se escribio.
+
+        div -> Se usa como division del documento, semanticamente no significa nada, es un contenedor generico que se usa generalmente para dar estilos a traves de css o para usar algo denominado "delegacion de eventos" en JavaScript.
+
+        hr -> Horizontal rule, se utiliza para decirle al navegador que vamos a cambiar de tema.
+    -->
+</body>
+</html>

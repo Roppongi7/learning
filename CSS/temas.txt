@@ -1,0 +1,42 @@
+CSS - NIVEL BASICO
+
+- Primeros Pasos
+- Estado de CSS
+- Fundamentos de CSS
+- Box Model
+- Posicionamiento
+- Bordes
+- Outline
+- Sombras
+- Colores
+- Textos
+- Variables CSS
+
+CSS - NIVEL INTERMEDIO
+
+- Metodologia Bem
+- Responsive design
+- Imagenes
+- Videos
+- Background
+- Tablas
+- Listas
+- Formularios
+- pseudoclases
+- Pseudoelementos
+- Flexbox
+- Grid
+
+CSS - NIVEL AVANZADO
+
+- Funcionamiento de CSS en el navegador
+- Propiedades animables
+- Estado inicial de los elementos
+- CSSOM
+- Transformaciones
+- Animaciones 2D
+- Eventos de animaciones (JS)
+- transiciones 2D
+- Eventos de transiciones (JS)
+- Transiciones 3D
+- Animaciones 3D

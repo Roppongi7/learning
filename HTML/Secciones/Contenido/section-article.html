@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>NOTICIAS NACIONALES</h1>
+    </header>
+    <main>
+        <!-- article dentro de section -->
+        <section>
+            <h2>Noticias Del Dia</h2>
+            <article>
+                <!-- aqui podriamos agregar header -->
+                <h3>Noticia 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium non soluta voluptatibus repudiandae, ea, culpa perspiciatis in deleniti cum iure nam placeat sint magni, similique nesciunt accusamus? Provident, officiis.</p>
+                <!-- aqui podriamos agregar footer -->
+            </article>
+            <article>
+                <h3>noticia 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto at vel culpa minima exercitationem, assumenda quod cum nam sit minus, illum tempore expedita. Dolore quibusdam omnis ratione quas corporis!</p>
+            </article>
+            <article>
+                <h3>noticia 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto at vel culpa minima exercitationem, assumenda quod cum nam sit minus, illum tempore expedita. Dolore quibusdam omnis ratione quas corporis!</p>
+            </article>
+        </section>
+        <!-- ////////////////////////////////// -->
+        <!-- Section dentro de article  -->
+        <article>
+            <h2>Navegadores mas utilizados en 2020</h2>
+            <section>
+                <h3>Chrome</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus neque minima, sint nisi non quod eligendi totam soluta repudiandae eos odio. Adipisci, voluptate. Maiores harum nisi quisquam laborum ullam?</p>
+            </section>
+            <section>
+                <h3>firefox</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eum, ad dolore adipisci commodi ex odio? Ut, aut odio. Illum optio aliquid possimus hic aspernatur voluptatibus, natus ut ullam et.</p>
+            </section>
+        </article>
+    </main>
+    <footer>4-11-2020</footer>
+
+    <!-- Semanticamente, los article pueden tener header y footer. Como son contenido independiente, permite tener su propio titulo y pie de pagina.-->
+
+    <!-- validator.w3.org pagina para checkear si el codigo html esta escrito semanticamente correcto. -->
+
+    <!-- para entender la diferencia, esta radica en la orientacion del uso de article y section. En una seccion de noticias, al no compartir informacion entre si, se coloca un section de noticias del dia, con noticias distintas en los articles.
+    para un listado de distintos navegadores que cumplen una funcion similar, utilizamos section dentro de un article -->
+
+<!--
+    Section: Es un contenedor generico que agrupa contenido que esta relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total, usaremos SECTION.
+
+    Article: Es un contenedor que representa contenido independiente, es decir, que podemos leer ese fragmento en cualquier otro sitio y tendria sentido por si mismo.
+
+    Aside: Se utiliza para representar contenido relacionado pero que no forma parte del contenido principal.
+
+    Anidamiento: Un section puede contener articles, por ejemplo, si tenemos varios articulos que hablan sobre etiquetas HTML, deben ir dentro de un section, ya que es contenido relacionado entre si, y los article serian contenido independiente porque podriamos leer uno sin haber leido el resto, y seguiria teniendo sentido.
+
+    El article es definido como un componente de la pagina de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+
+    Tambien existe el caso en el que un article contenga varias secciones, el articulo independiente podria ser navegadores y este contener dentro secciones como navegadores mas utilizados en 2020.
+-->
+</body>
+</html>
