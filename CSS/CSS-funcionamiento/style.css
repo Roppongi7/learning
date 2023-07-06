@@ -8,8 +8,8 @@
                     id's: 100
                     Estilos en linea: 1000
                     !important: gana a toda la especificidad. no usar.
-            - Cascada
-            - Herencia
+            - Cascada -> Funciona siempre que la especificidad sobre el elemento sea la misma
+            - Herencia -> Es la capacidad que tienen algunos elementos de heredar algunas propiedades de sus elementos contenedores (padres, abuelos, bisabuelos, etc)
 */
 
 h1{
@@ -39,4 +39,18 @@ h1.title#title{
 /* Utilizar siempre clases, para no tener un problema de especificidad. */
 
 /* CSS Specificity Graph Generator: website para colocar tu codigo y ver si esta escrito de una manera especificamente correcta, cuanto menos picos tenga la grafica, mejor sera tu codigo CSS. */
+
+.h1{
+    color: inherit; 
+    /* propiedad utilizada para forzar herencia con propiedades que no hereden de manera natural. */
+}
+
+h1.title{
+    color: initial;
+    /* estilos por defecto */
+}
+
+/* user agent stylesheet: hoja de estilo que trae por defecto los navegadores. dentro de styles en inspeccionar, nos marca que estilos por defecto tiene nuestra etiqueta.
+
+La pestana computed nos dice que estilo se esta aplicando, y cual esta sobreescrito, nos ayuda para saber donde no se esta ejecutando codigo correctamente. */
 

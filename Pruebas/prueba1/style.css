@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/background-restaurant.jpg);
+    backdrop-filter: blur(1.5px);
+    background-size: contain;
+    margin: auto auto;
+    background-color: #fff;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.logo{
+    width: 3em;
+    height: 3em;
+    margin-left: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+
+.menu-container{
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu-item{
+    list-style: none;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-item:hover{
+    background-color: black;
+    color: #fff;
+}
