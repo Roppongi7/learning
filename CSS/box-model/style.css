@@ -1,0 +1,62 @@
+/* 
+MARGIN:
+
+    Es la propiedad que nos permite generar espacio entre elementos.
+    Es un shorthand (propiedad abreviada) que controla los 4 lados posibles alos que dar margenes.
+
+    margin-top: margen superior.
+    margin-right: margen derecho.
+    margin-bottom: margen inferior.
+    margin-left: margen izquierdo.
+
+    Admite hasta 4 valores que van en el orden de las agujas del reloj.
+    4 valores -> margin: top right bottm left;
+    3 valores -> margin: top left/right bottom;
+    2 valores -> margin: top/bottom left/right;
+    1 valor -> margin: top/right/bottom/left;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /* esta es una mala practica comun, pierde toda la semantica html al quitar todos los espacios entre parrafos y etc.  */
+    /* borrar para ver cambios. */
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    /* buena practica para lograr que el body no posea margen sobre el resto del viewport, haciendo que los navs queden espaciados de la ventana completa. */
+}
+
+.title{
+    margin-left: auto;
+    /* se queda en el lugar, por mas que tenga el valor auto en left. ya que no tiene un ancho declarado. por ende, ocupa toda su linea. */
+}
+
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /* alto y ancho */
+    margin: 100px;
+    /* Separa el bloque violeta 100 px de cada lado, de otras cajas. */
+    margin: 0 auto;
+    /* Margen automatico, right: auto se pega a la izquierda, left: auto, se pega a la derecha. tiene que ser de bloque, y tener un ancho declarado, sino, no funciona. */
+    /* margin 0 auto, da valores verticales de 0, y centra la caja de manera horizontal. */
+}
+
+.inline{
+    background-color: lightcoral;
+    color: inherit;
+    width: 200px;
+    height: 200px;
+    /* los elementos de linea no tienen medidas, el tamano lo determina su contenido. */
+    margin-top: 100px;
+    /* los margenes verticales, top y bottom, no funcionan en elementos de linea. */
+    margin: 0 100px;
+    /* Los margenes verticales, right y left, ambos funcionan en elementos de linea. */
+}
+
